@@ -13,7 +13,7 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
-typedef unsigned int size_t;
+typedef unsigned long size_t;
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
