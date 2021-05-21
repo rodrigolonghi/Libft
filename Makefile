@@ -13,7 +13,8 @@
 FLAG = -Wall -Wextra -Werror
 NAME = libft.a
 FT = ft_toupper.o \
-	ft_tolower.o
+	ft_tolower.o \
+	ft_strlen.o
 
 all: $(FT)
 	ar -rcs $(NAME) *.o

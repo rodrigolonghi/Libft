@@ -15,15 +15,29 @@
 
 int main(void)
 {
+	//toupper test
 	int toupper = 'a';
 	printf("ft_toupper: %c -> ", toupper);
 	toupper = ft_toupper(toupper);
-	printf("%c\n", toupper);
+	printf("%c\n\n", toupper);
 	
+	//tolower test
 	int tolower = 'A';
 	printf("ft_tolower: %c -> ", tolower);
 	tolower = ft_tolower(tolower);
-	printf("%c\n", tolower);
+	printf("%c\n\n", tolower);
 	
+	//strlen test
+	size_t size;
+	char string[] = "abc";
+	char string2[] = "This is a phrase with 35 characters";
+	char *s;
+	s = string;
+	size = ft_strlen(s);
+	printf("Phrase: %s -> Size: %d\n", string, size);
+	s = string2;
+	size = ft_strlen(s);
+	printf("Phrase: %s -> Size: %d\n\n", string2, size);
+
 	return (0);
 }

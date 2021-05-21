@@ -13,7 +13,10 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
+typedef unsigned int size_t;
+
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+size_t	ft_strlen(const char *s);
 
 #endif
