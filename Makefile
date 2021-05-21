@@ -6,13 +6,14 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/21 00:36:44 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/21 02:58:13 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FLAG = -Wall -Wextra -Werror
 NAME = libft.a
-FT = ft_toupper.o
+FT = ft_toupper.o \
+	ft_tolower.o
 
 all: $(FT)
 	ar -rcs $(NAME) *.o

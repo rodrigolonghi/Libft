@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/21 02:55:19 by rfelipe-         ###   ########.fr       */
+/*   Created: 2021/05/21 02:54:28 by rfelipe-          #+#    #+#             */
+/*   Updated: 2021/05/21 02:57:01 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-int ft_toupper(int c);
-int ft_tolower(int c);
-
-#endif
+int ft_tolower(int c)
+{
+    if(c >= 'A' && c <= 'Z')
+        c += 32;
+    return (c);
+}
