@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/21 02:57:19 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/21 19:45:15 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,10 @@ int main(void)
 	char *s;
 	s = string;
 	size = ft_strlen(s);
-	printf("Phrase: %s -> Size: %d\n", string, size);
+	printf("Phrase: %s -> Size: %zu\n", string, size);
 	s = string2;
 	size = ft_strlen(s);
-	printf("Phrase: %s -> Size: %d\n\n", string2, size);
+	printf("Phrase: %s -> Size: %zu\n\n", string2, size);
 
 	return (0);
 }
