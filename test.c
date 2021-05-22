@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 16:23:00 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 16:34:43 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int	main(void)
 
 	//strtrim test
 	// char string[] =" \nteste     \n\n";
-    // char remove[] =" \n";
+	// char remove[] =" \n";
 	// char *s1, *set, *trim;
 	// s1 = string;
 	// set = remove;
@@ -92,5 +92,20 @@ int	main(void)
 	// int fd = 1;
 	// char *c = string;
 	// ft_putendl_fd(c, fd);
+
+	//putnbr_fd test
+	// int n = 0;
+	// int fd = 1;
+	// ft_putnbr_fd(n, fd);
+	// ft_putchar_fd('\n', fd);
+	// n = -2147483648;
+	// ft_putnbr_fd(n, fd);
+	// ft_putchar_fd('\n', fd);
+	// n = 2147483647;
+	// ft_putnbr_fd(n, fd);
+	// ft_putchar_fd('\n', fd);
+	// n = 101010;
+	// ft_putnbr_fd(n, fd);
+	// ft_putchar_fd('\n', fd);
 	return (0);
 }
