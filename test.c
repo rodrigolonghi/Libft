@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 17:51:33 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 17:55:35 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -170,5 +170,33 @@ int	main(void)
 	// printf("Original isascii: %d\n", result);
 	// result = ft_isascii(c);
 	// printf("My isascii: %d\n", result);
+
+	//isprint test
+	int c = '1';
+	int result;
+	result = isascii(c);
+	printf("Original isascii: %d\n", result);
+	result = ft_isascii(c);
+	printf("My isascii: %d\n", result);
+	c = 1;
+	result = isascii(c);
+	printf("Original isascii: %d\n", result);
+	result = ft_isascii(c);
+	printf("My isascii: %d\n", result);
+	c = 'a';
+	result = isascii(c);
+	printf("Original isascii: %d\n", result);
+	result = ft_isascii(c);
+	printf("My isascii: %d\n", result);
+	c = 128;
+	result = isascii(c);
+	printf("Original isascii: %d\n", result);
+	result = ft_isascii(c);
+	printf("My isascii: %d\n", result);
+	c = ' ';
+	result = isascii(c);
+	printf("Original isascii: %d\n", result);
+	result = ft_isascii(c);
+	printf("My isascii: %d\n", result);
 	return (0);
 }
