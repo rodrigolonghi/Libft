@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 04:22:12 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 05:33:47 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,14 @@ int	main(void)
 	// s2 = string2;
 	// joined = ft_strjoin(s1, s2);
 	// printf("String 1: %s\nString 2: %s\nJoined string: %s\n", s1, s2, joined);
+
+	//strtrim test
+	// char string[] =" \nteste     \n\n";
+    // char remove[] =" \n";
+	// char *s1, *set, *trim;
+	// s1 = string;
+	// set = remove;
+	// trim = ft_strtrim(s1, set);
+	// printf("%s\n", trim);
 	return (0);
 }

@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/22 03:24:19 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/22 04:30:11 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ FT = ft_toupper.o \
 	ft_tolower.o \
 	ft_strlen.o \
 	ft_substr.o \
-	ft_strjoin.o
+	ft_strjoin.o \
+	ft_strtrim.o
 
 all: $(FT)
 	ar -rcs $(NAME) *.o
