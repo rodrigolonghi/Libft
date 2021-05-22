@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 17:31:54 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 17:38:19 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ void	ft_putnbr_fd(int n, int fd);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
+int		ft_isascii(int c);
 
 #endif
