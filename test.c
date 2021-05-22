@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 03:18:48 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 04:22:12 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	main(void)
 	// size = ft_strlen(s);
 	// printf("Phrase: %s -> Size: %zu\n\n", string2, size);
 
-	//substr test
+	//substr test 1
 	// char string[] = "This is a test phrase";
 	// char *s;
 	// char *substring;
@@ -49,5 +49,20 @@ int	main(void)
 	// substring = ft_substr(s,start,len);
 	// printf("Original string: %s\nStart: %u\nSize: %zu\nResult: %s\n", string, start, len, substring);
 
+	// char string2[] = "Test";
+	// s = string2;
+	// start = 0;
+	// len = 10;
+	// substring = ft_substr(s,start,len);
+	// printf("Original string: %s\nStart: %u\nSize: %zu\nResult: %s\n", string2, start, len, substring);
+
+	//strjoin test
+	// char string1[] = "Test ";
+	// char string2[] = "phrase";
+	// char *s1, *s2, *joined;
+	// s1 = string1;
+	// s2 = string2;
+	// joined = ft_strjoin(s1, s2);
+	// printf("String 1: %s\nString 2: %s\nJoined string: %s\n", s1, s2, joined);
 	return (0);
 }
