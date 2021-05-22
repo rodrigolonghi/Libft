@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 16:19:39 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 16:23:00 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,11 @@ int	main(void)
 	// char *c = string;
 	// ft_putstr_fd(c, fd);
 	// ft_putchar_fd('\n', fd);
+
+	//putendl_fd test
+	// char string[] = "Test string";
+	// int fd = 1;
+	// char *c = string;
+	// ft_putendl_fd(c, fd);
 	return (0);
 }
