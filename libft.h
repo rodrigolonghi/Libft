@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 04:30:02 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 05:57:18 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ size_t	ft_strlen(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+size_t	strlcpy(char *dst, const char *src, size_t size);
 
 #endif
