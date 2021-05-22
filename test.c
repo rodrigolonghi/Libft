@@ -6,14 +6,14 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/21 19:45:15 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 01:17:55 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
 	//toupper test
 	int toupper = 'a';

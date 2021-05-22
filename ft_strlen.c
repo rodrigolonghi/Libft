@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 18:15:56 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/21 18:15:56 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 00:57:30 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t size;
+	size_t	size;
 
 	size = 0;
 	while (s[size] != '\0')
