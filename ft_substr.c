@@ -1,28 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 02:40:51 by rfelipe-         ###   ########.fr       */
+/*   Created: 2021/05/22 02:41:12 by rfelipe-          #+#    #+#             */
+/*   Updated: 2021/05/22 03:11:27 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
-
-typedef struct s_list
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	content_size;
-}	t_list;
+	char	*substring;
 
-int		ft_toupper(int c);
-int		ft_tolower(int c);
-size_t	ft_strlen(const char *s);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-
-#endif
+	if (len == 0)
+		substring = NULL;
+	else
+	{
+		substring = (char *)malloc(len);
+		while (start < len && s[start] != '\0')
+		{
+			substring[start] = s[start];
+			start++;
+		}
+		if (start < len)
+		{
+			while (start < len)
+			{
+				substring[start] = '\0';
+				start++;
+			}
+		}
+	}
+	return (substring);
+}
