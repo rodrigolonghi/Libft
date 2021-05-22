@@ -6,12 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 16:34:43 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 17:09:04 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+#include <ctype.h>
 
 int	main(void)
 {
@@ -107,5 +108,13 @@ int	main(void)
 	// n = 101010;
 	// ft_putnbr_fd(n, fd);
 	// ft_putchar_fd('\n', fd);
+
+	//isalpha test
+	// int c = 10980;
+	// int result;
+	// result = isalpha(c);
+	// printf("Original isalpha: %d\n", result);
+	// result = ft_isalpha(c);
+	// printf("My isalpha: %d\n", result);
 	return (0);
 }

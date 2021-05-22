@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/22 16:24:39 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/22 16:51:54 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ FT = ft_toupper.o \
 	ft_putchar_fd.o \
 	ft_putstr_fd.o \
 	ft_putendl_fd.o \
-	ft_putnbr_fd.o
+	ft_putnbr_fd.o \
+	ft_isalpha.o
 
 all: $(FT)
 	ar -rcs $(NAME) *.o
