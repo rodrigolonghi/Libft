@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 17:29:46 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/22 17:36:37 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,16 +118,34 @@ int	main(void)
 	// printf("My isalpha: %d\n", result);
 
 	//isdigit test
+	// int c = '1';
+	// int result;
+	// result = isdigit(c);
+	// printf("Original isdigit: %d\n", result);
+	// result = ft_isdigit(c);
+	// printf("My isdigit: %d\n", result);
+	// c = 1;
+	// result = isdigit(c);
+	// printf("Original isdigit: %d\n", result);
+	// result = ft_isdigit(c);
+	// printf("My isdigit: %d\n", result);
+
+	//isalnum test
 	int c = '1';
 	int result;
-	result = isdigit(c);
-	printf("Original isdigit: %d\n", result);
-	result = ft_isdigit(c);
-	printf("My isdigit: %d\n", result);
+	result = isalnum(c);
+	printf("Original isalnum: %d\n", result);
+	result = ft_isalnum(c);
+	printf("My isalnum: %d\n", result);
 	c = 1;
-	result = isdigit(c);
-	printf("Original isdigit: %d\n", result);
-	result = ft_isdigit(c);
-	printf("My isdigit: %d\n", result);
+	result = isalnum(c);
+	printf("Original isalnum: %d\n", result);
+	result = ft_isalnum(c);
+	printf("My isalnum: %d\n", result);
+	c = 'a';
+	result = isalnum(c);
+	printf("Original isalnum: %d\n", result);
+	result = ft_isalnum(c);
+	printf("My isalnum: %d\n", result);
 	return (0);
 }
