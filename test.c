@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 17:55:35 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/23 06:07:30 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -172,31 +172,46 @@ int	main(void)
 	// printf("My isascii: %d\n", result);
 
 	//isprint test
-	int c = '1';
-	int result;
-	result = isascii(c);
-	printf("Original isascii: %d\n", result);
-	result = ft_isascii(c);
-	printf("My isascii: %d\n", result);
-	c = 1;
-	result = isascii(c);
-	printf("Original isascii: %d\n", result);
-	result = ft_isascii(c);
-	printf("My isascii: %d\n", result);
-	c = 'a';
-	result = isascii(c);
-	printf("Original isascii: %d\n", result);
-	result = ft_isascii(c);
-	printf("My isascii: %d\n", result);
-	c = 128;
-	result = isascii(c);
-	printf("Original isascii: %d\n", result);
-	result = ft_isascii(c);
-	printf("My isascii: %d\n", result);
-	c = ' ';
-	result = isascii(c);
-	printf("Original isascii: %d\n", result);
-	result = ft_isascii(c);
-	printf("My isascii: %d\n", result);
+	// int c = '1';
+	// int result;
+	// result = isascii(c);
+	// printf("Original isascii: %d\n", result);
+	// result = ft_isascii(c);
+	// printf("My isascii: %d\n", result);
+	// c = 1;
+	// result = isascii(c);
+	// printf("Original isascii: %d\n", result);
+	// result = ft_isascii(c);
+	// printf("My isascii: %d\n", result);
+	// c = 'a';
+	// result = isascii(c);
+	// printf("Original isascii: %d\n", result);
+	// result = ft_isascii(c);
+	// printf("My isascii: %d\n", result);
+	// c = 128;
+	// result = isascii(c);
+	// printf("Original isascii: %d\n", result);
+	// result = ft_isascii(c);
+	// printf("My isascii: %d\n", result);
+	// c = ' ';
+	// result = isascii(c);
+	// printf("Original isascii: %d\n", result);
+	// result = ft_isascii(c);
+	// printf("My isascii: %d\n", result);
+
+	//itoa test
+	// int n = -2147483648;
+	// char *str;
+	// str = ft_itoa(n);
+	// printf("%s\n", str);
+	// n = 2147483647;
+	// str = ft_itoa(n);
+	// printf("%s\n", str);
+	// n = 0;
+	// str = ft_itoa(n);
+	// printf("%s\n", str);
+	// n = 8761010;
+	// str = ft_itoa(n);
+	// printf("%s\n", str);
 	return (0);
 }
