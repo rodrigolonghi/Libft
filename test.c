@@ -6,13 +6,14 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 05:39:18 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 20:22:56 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 //strmapi test
 // char	ft_toupper_char(unsigned int i, char c)
@@ -285,5 +286,19 @@ int	main(void)
 	// char *dup;
 	// dup = ft_strdup(s);
 	// printf("%s\n", dup);
+
+	//strnstr test
+	// const char *largestring = "Foo Bar Baz";
+	// const char *smallstring = "Bar";
+	// char *ptr;
+
+	// ptr = strnstr(largestring, smallstring);
+	// printf("%s\n", ptr);
+
+	//calloc test
+	// char *s1, *s2;
+	// s1 = calloc(5, 1);
+	// s2 = ft_calloc(5, 1);
+	// printf("Original calloc: %zu\nMy calloc:       %zu\n", sizeof(s1), sizeof(s2));
 	return (0);
 }

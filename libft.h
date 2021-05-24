@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 05:54:19 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 19:54:34 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@
 
 typedef struct s_list
 {
-	size_t	content_size;
+	void			*content;
+	struct s_list	*next;
+	size_t			content_size;
 }	t_list;
 
 int		ft_toupper(int c);
@@ -44,5 +46,6 @@ int		ft_atoi(const char *nptr);
 char	*ft_strdup(const char *s);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	*ft_calloc(size_t count, size_t size);
 
 #endif
