@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/23 06:07:30 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 03:20:10 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -213,5 +213,19 @@ int	main(void)
 	// n = 8761010;
 	// str = ft_itoa(n);
 	// printf("%s\n", str);
+
+	//split test
+	// char *s = ",,,,,JAN,FEB,MAR,APR,MAY,JUN,JUL,AUG,SEP,OCT,NOV,DEC,";
+	// char c = ',';
+	// char **result;
+	// result = ft_split(s, c);
+	// if (result != NULL)
+	// {
+	// 	for (int i = 0; result[i] != NULL; i++)
+	// 		printf("%s ", result[i]);
+	// }
+	// else
+	// 	printf("(NULL)");
+	// printf("\n");
 	return (0);
 }
