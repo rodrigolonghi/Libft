@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 05:28:56 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 05:43:58 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,6 @@ char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_atoi(const char *nptr);
 char	*ft_strdup(const char *s);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
+
 #endif
