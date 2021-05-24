@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 03:50:07 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 04:14:36 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,5 @@ int		ft_isprint(int c);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
+int		ft_atoi(const char *nptr);
 #endif

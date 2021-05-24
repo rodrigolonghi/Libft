@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 04:10:52 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 05:19:20 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -241,5 +241,43 @@ int	main(void)
 	// char *s = "test";
 	// s = ft_strmapi(s, ft_toupper2_char);
 	// printf("%s\n", s);
+
+	//atoi test
+	// char *nptr = "    			\n\n\n12345    			\n\n\n";
+	// int nbr;
+	// nbr = atoi(nptr);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr);
+	// printf("My atoi:       %d\n", nbr);
+	// char *nptr2 = "-2147483648";
+	// nbr = atoi(nptr2);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr2);
+	// printf("My atoi:       %d\n", nbr);
+	// char *nptr3 = "2147483647";
+	// nbr = atoi(nptr3);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr3);
+	// printf("My atoi:       %d\n", nbr);
+	// char *nptr4 = "-1234a567890";
+	// nbr = atoi(nptr4);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr4);
+	// printf("My atoi:       %d\n", nbr);
+	// char *nptr5 = "-123 4567890";
+	// nbr = atoi(nptr5);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr5);
+	// printf("My atoi:       %d\n", nbr);
+	// char *nptr6 = "--1234567890";
+	// nbr = atoi(nptr6);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr6);
+	// printf("My atoi:       %d\n", nbr);
+	// char *nptr7 = "++1234567890";
+	// nbr = atoi(nptr7);
+	// printf("Original atoi: %d\n", nbr);
+	// nbr = ft_atoi(nptr7);
+	// printf("My atoi:       %d\n", nbr);
 	return (0);
 }
