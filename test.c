@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 20:22:56 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 20:34:13 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -291,8 +291,7 @@ int	main(void)
 	// const char *largestring = "Foo Bar Baz";
 	// const char *smallstring = "Bar";
 	// char *ptr;
-
-	// ptr = strnstr(largestring, smallstring);
+	// ptr = ft_strnstr(largestring, smallstring, 10);
 	// printf("%s\n", ptr);
 
 	//calloc test
