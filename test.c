@@ -6,13 +6,22 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 03:20:10 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 04:10:52 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 #include <ctype.h>
+
+//strmapi test
+// char	ft_toupper_char(unsigned int i, char c)
+// {
+// 	i = 32;
+// 	if (c >= 'a' && c <= 'z')
+// 		c -= i;
+// 	return (c);
+// }
 
 int	main(void)
 {
@@ -227,5 +236,10 @@ int	main(void)
 	// else
 	// 	printf("(NULL)");
 	// printf("\n");
+
+	//strmapi test
+	// char *s = "test";
+	// s = ft_strmapi(s, ft_toupper2_char);
+	// printf("%s\n", s);
 	return (0);
 }
