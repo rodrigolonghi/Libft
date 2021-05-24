@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 05:19:20 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/24 05:39:18 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -279,5 +279,11 @@ int	main(void)
 	// printf("Original atoi: %d\n", nbr);
 	// nbr = ft_atoi(nptr7);
 	// printf("My atoi:       %d\n", nbr);
+
+	//strdup test
+	// char *s = "Dup";
+	// char *dup;
+	// dup = ft_strdup(s);
+	// printf("%s\n", dup);
 	return (0);
 }
