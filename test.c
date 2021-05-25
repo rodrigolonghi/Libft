@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 00:09:51 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 00:29:07 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -315,5 +315,11 @@ int	main(void)
 	// }
 	// if (i == 5)
 	// 	printf("Success!\n");
+
+	//strchr test
+	const char *s = "abcdefghijklmnopqrstuvwxyz0123456789";
+	char *p;
+	p = ft_strchr(s, '\0');
+	printf("%s\n", p);
 	return (0);
 }
