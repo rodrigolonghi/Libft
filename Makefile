@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/25 02:31:16 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/25 02:44:20 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,8 @@ FT = ft_toupper.o \
 	ft_memchr.o \
 	ft_memset.o \
 	ft_memcpy.o \
-	ft_memccpy.o
+	ft_memccpy.o \
+	ft_memmove.o
 
 all: $(FT)
 	ar -rcs $(NAME) *.o
