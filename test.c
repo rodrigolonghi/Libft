@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 00:38:51 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 01:34:55 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -327,5 +327,11 @@ int	main(void)
 	// char *p;
 	// p = ft_strrchr(s, 'a');
 	// printf("%s\n", p);
+
+	//memset test
+	// char *b = malloc(10);
+	// b = ft_memset(b, 'a', 9);
+	// b[9] = '\0';
+	// printf("%s\n", b);
 	return (0);
 }
