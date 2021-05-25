@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 20:34:13 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 00:09:51 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -299,5 +299,21 @@ int	main(void)
 	// s1 = calloc(5, 1);
 	// s2 = ft_calloc(5, 1);
 	// printf("Original calloc: %zu\nMy calloc:       %zu\n", sizeof(s1), sizeof(s2));
+
+	//bzero test
+	// char *s = malloc(5);
+	// size_t i = 0;
+	// ft_bzero(s, 5);
+	// while (i < 5)
+	// {
+	// 	if (s[i] != 0)
+	// 	{
+	// 		printf("Error!\n");
+	// 		break ;
+	// 	}
+	// 	i++;
+	// }
+	// if (i == 5)
+	// 	printf("Success!\n");
 	return (0);
 }
