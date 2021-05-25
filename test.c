@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 00:29:07 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 00:38:51 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -317,9 +317,15 @@ int	main(void)
 	// 	printf("Success!\n");
 
 	//strchr test
-	const char *s = "abcdefghijklmnopqrstuvwxyz0123456789";
-	char *p;
-	p = ft_strchr(s, '\0');
-	printf("%s\n", p);
+	// const char *s = "abcdefghijklmnopqrstuvwxyz0123456789";
+	// char *p;
+	// p = ft_strchr(s, '\0');
+	// printf("%s\n", p);
+
+	//strrchr test
+	// const char *s = "abcde0123abcde0";
+	// char *p;
+	// p = ft_strrchr(s, 'a');
+	// printf("%s\n", p);
 	return (0);
 }
