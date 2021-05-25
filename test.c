@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 02:31:36 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 01:34:55 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 02:18:24 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -333,5 +333,11 @@ int	main(void)
 	// b = ft_memset(b, 'a', 9);
 	// b[9] = '\0';
 	// printf("%s\n", b);
+
+	//memcpy test
+	void *restrict dst = malloc(6);
+	const void *restrict src = "abcde";
+	dst = ft_memcpy(dst, src, 6);
+	printf("%p\n", dst);
 	return (0);
 }
