@@ -6,13 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 04:45:50 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/23 06:06:31 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 03:54:53 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_part_2(char *str, char nb[])
+void	ft_itoa_part_2(char *str, char nb[])
 {
 	int	size;
 	int	i;
@@ -56,6 +56,6 @@ char	*ft_itoa(int n)
 		i++;
 	}
 	str = (char *)malloc(ft_strlen(nb) + 1);
-	ft_part_2(str, nb);
+	ft_itoa_part_2(str, nb);
 	return (str);
 }

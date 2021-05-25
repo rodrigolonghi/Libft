@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 00:57:10 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 03:22:15 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 04:29:25 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_list
 	size_t			content_size;
 }	t_list;
 
-int		ft_atoi(const char *nptr);
+int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
@@ -46,8 +46,8 @@ char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s);
 char	*ft_strjoin(char const *s1, char const *s2);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
-size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size);
+size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t size);
 size_t	ft_strlen(const char *s);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);

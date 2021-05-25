@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 00:17:29 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 03:17:21 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 04:12:49 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ char	**ft_split(char const *s, char c)
 
 	if (s == NULL)
 		return (NULL);
-	s = ft_strtrim(s, &c);
 	result = (char **)malloc(8 * (ft_nbr_wrd(s, c) + 1));
 	start = 0;
 	pos = 0;

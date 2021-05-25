@@ -6,37 +6,37 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 04:14:50 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 05:22:11 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 03:34:34 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+int	ft_atoi(const char *str)
 {
 	char	signal;
 	int		number;
 
-	nptr = ft_strtrim(nptr, " 	\n");
+	str = ft_strtrim(str, " 	\n");
 	signal = 0;
 	number = 0;
-	while (*nptr != '\0')
+	while (*str != '\0')
 	{
-		if ((*nptr == '-' || *nptr == '+') && signal == 0)
-			signal = *nptr;
-		else if ((*nptr == '-' || *nptr == '+') && signal != 0)
+		if ((*str == '-' || *str == '+') && signal == 0)
+			signal = *str;
+		else if ((*str == '-' || *str == '+') && signal != 0)
 			break ;
-		else if (*nptr < '0' || *nptr > '9')
+		else if (*str < '0' || *str > '9')
 			break ;
 		else
 		{
 			number *= 10;
 			if (signal == '-')
-				number -= *nptr - 48;
+				number -= *str - 48;
 			else
-				number += *nptr - 48;
+				number += *str - 48;
 		}
-		nptr++;
+		str++;
 	}
 	return (number);
 }

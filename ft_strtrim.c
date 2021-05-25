@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 04:30:31 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 05:24:51 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 04:40:54 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 unsigned int	ft_find_start(char const *s1, char const *set)
 {
-	unsigned int	i;
-	unsigned int	start;
+	int	i;
+	int	start;
 
 	start = 0;
 	i = 0;
@@ -34,8 +34,8 @@ unsigned int	ft_find_start(char const *s1, char const *set)
 
 unsigned int	ft_find_end(char const *s1, char const *set)
 {
-	unsigned int	i;
-	unsigned int	end;
+	int	i;
+	int	end;
 
 	end = ft_strlen(s1) - 1;
 	i = 0;
@@ -54,14 +54,14 @@ unsigned int	ft_find_end(char const *s1, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char			*str;
-	unsigned int	start;
-	unsigned int	end;
+	char	*str;
+	int		start;
+	int		end;
 
 	if (s1 == NULL)
 		str = NULL;
 	else if (set == NULL)
-		str = ft_substr(s1, 0, ft_strlen(s1));
+		str = ft_strdup(s1);
 	else
 	{
 		start = ft_find_start(s1, set);

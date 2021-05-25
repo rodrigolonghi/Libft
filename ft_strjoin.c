@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 03:24:30 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/22 04:13:35 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 04:17:46 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char			*string;
-	unsigned int	i;
-	unsigned int	j;
+	char	*string;
+	int		i;
+	int		j;
 
 	if (s1 == NULL && s2 == NULL)
 		string = NULL;

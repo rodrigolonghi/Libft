@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 05:54:33 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/24 05:55:18 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/25 04:31:52 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned int	pos;
+	size_t	pos;
 
 	pos = 0;
 	while (pos < n)
