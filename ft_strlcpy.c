@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 05:57:46 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 04:28:52 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/26 01:56:47 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t size)
 	pos = 0;
 	if (size > 0)
 	{
-		while (pos < size - 1)
+		while (pos < size - 1 && src[pos])
 		{
 			dst[pos] = src[pos];
 			pos++;

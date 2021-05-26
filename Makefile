@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/25 03:11:22 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/25 23:56:10 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,9 @@ FT = ft_atoi.o \
 	ft_tolower.o \
 	ft_toupper.o
 
-all: $(FT)
+all: $(NAME)
+
+$(NAME) : $(FT)
 	ar -rcs $(NAME) *.o
 
 %.o: %.c

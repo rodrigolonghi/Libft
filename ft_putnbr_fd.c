@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 16:24:56 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 04:22:44 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/26 02:08:05 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_putnbr_fd(int n, int fd)
 			if (column == 0)
 				ft_putchar_fd('-', fd);
 		}
-		else
+		else if (!(n == 0 && column != 0))
 			digit[column] = n % 10 + '0';
 		n /= 10;
 		column++;
