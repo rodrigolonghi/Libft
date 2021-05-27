@@ -6,13 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 04:14:50 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/26 01:05:15 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/26 23:21:58 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi_part2(int number, char signal, const char *str)
+static int	ft_atoi_part2(int number, char signal, const char *str)
 {
 	number *= 10;
 	if (signal == '-')

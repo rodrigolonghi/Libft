@@ -6,13 +6,13 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 04:45:50 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 03:54:53 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/26 23:22:22 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_itoa_part_2(char *str, char nb[])
+static void	ft_itoa_part_2(char *str, char nb[])
 {
 	int	size;
 	int	i;
