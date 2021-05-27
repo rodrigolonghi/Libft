@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/27 00:57:18 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/27 01:02:01 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,8 @@ FT = ft_atoi.o \
 	ft_tolower.o \
 	ft_toupper.o
 
-FT_BONUS = ft_lstnew.o
+FT_BONUS = ft_lstnew.o \
+	ft_lstadd_front.o
 
 all: $(NAME)
 
