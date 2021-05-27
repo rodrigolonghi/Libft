@@ -6,7 +6,7 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/27 02:01:14 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/27 02:13:03 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,8 @@ FT_BONUS = ft_lstnew.o \
 	ft_lstadd_front.o \
 	ft_lstsize.o \
 	ft_lstlast.o \
-	ft_lstadd_back.o
+	ft_lstadd_back.o \
+	ft_lstdelone.o
 
 all: $(NAME)
 
