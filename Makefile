@@ -6,13 +6,13 @@
 #    By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/21 00:36:44 by rfelipe-          #+#    #+#              #
-#    Updated: 2021/05/25 23:56:10 by rfelipe-         ###   ########.fr        #
+#    Updated: 2021/05/27 00:57:18 by rfelipe-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FLAG = -Wall -Wextra -Werror
 
-NAME = libft.a
+NAME = libft.a 
 
 FT = ft_atoi.o \
 	ft_bzero.o \
@@ -49,6 +49,8 @@ FT = ft_atoi.o \
 	ft_tolower.o \
 	ft_toupper.o
 
+FT_BONUS = ft_lstnew.o
+
 all: $(NAME)
 
 $(NAME) : $(FT)
@@ -64,3 +66,6 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+bonus: $(FT_BONUS) $(FT)
+	ar -rcs $(NAME) *.o
