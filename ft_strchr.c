@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 00:16:26 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/25 00:23:50 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/27 22:43:49 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	temp = (char *)s;
-	if (temp == NULL)
-		return (NULL);
 	while (temp[i] != '\0')
 	{
 		if (temp[i] == c)

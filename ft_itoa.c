@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/23 04:45:50 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/26 23:22:22 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/27 23:13:14 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,8 @@ char	*ft_itoa(int n)
 		i++;
 	}
 	str = (char *)malloc(ft_strlen(nb) + 1);
+	if (!str)
+		return (NULL);
 	ft_itoa_part_2(str, nb);
 	return (str);
 }

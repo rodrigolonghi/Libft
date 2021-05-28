@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 05:57:46 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/26 23:56:24 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/27 22:55:59 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	pos;
 
+	if (!dst || !src)
+		return (0);
 	pos = 0;
 	if (size > 0)
 	{

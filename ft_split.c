@@ -6,13 +6,15 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 00:17:29 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/26 19:58:40 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/28 05:51:14 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	**ft_free_result(char **result)
+#include "libft.h"
+
+static void	*ft_free_result(char **result)
 {
 	int	i;
 
@@ -26,59 +28,20 @@ static char	**ft_free_result(char **result)
 	return (NULL);
 }
 
-static void
-	ft_write_wrd(char const *s, char **result, char c, unsigned int index)
+static size_t	ft_wrd_size(char const *s, char c)
 {
-	unsigned int	start;
-	unsigned int	pos;
+	size_t	pos;
 
-	start = 0;
 	pos = 0;
-	while (s[pos] != '\0' && s[pos] == c)
+	while (s[pos] && s[pos] != c)
 		pos++;
-	while (start < index)
-	{
-		if (s[pos] == c)
-		{
-			start++;
-			while (s[pos] != '\0' && s[pos] == c)
-				pos++;
-			continue ;
-		}
-		pos++;
-	}
-	start = pos;
-	while (s[pos] != '\0' && s[pos] != c)
-		pos++;
-	result[index] = (char *)ft_calloc(pos - start + 1, 1);
-	if (!result[index])
-		ft_free_result(result);
-	ft_memcpy(result[index], s + start, pos - start);
+	return (pos);
 }
 
-static void
-	ft_last_wrd (char const *s, char **result, char c, unsigned int index)
+static size_t	ft_nbr_wrd(char const *s, char c)
 {
-	unsigned int	start;
-	unsigned int	end;
-
-	start = ft_strlen(s) - 1;
-	while (s[start] == c)
-		start--;
-	end = start;
-	while (s[start] != c)
-		start--;
-	start++;
-	result[index] = (char *)ft_calloc(end - start + 2, 1);
-	if (!result[index])
-		ft_free_result(result);
-	ft_memcpy(result[index], s + start, end - start + 1);
-}
-
-static unsigned int	ft_nbr_wrd(char const *s, char c)
-{
-	unsigned int	nbr_wrd;
-	unsigned int	pos;
+	size_t	nbr_wrd;
+	size_t	pos;
 
 	nbr_wrd = 0;
 	pos = 0;
@@ -102,29 +65,46 @@ static unsigned int	ft_nbr_wrd(char const *s, char c)
 	return (nbr_wrd);
 }
 
+static char	*ft_put_wrd(char const *s, size_t size)
+{
+	size_t	i;
+	char	*temp;
+
+	temp = ft_calloc(size + 1, sizeof(char));
+	if (!temp)
+		return (NULL);
+	i = 0;
+	while (i < size)
+	{
+		temp[i] = s[i];
+		i++;
+	}
+	return (temp);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	unsigned int	index;
-	char			**result;
+	size_t	nbr_wrd;
+	size_t	index;
+	char	**result;
 
 	if (!s)
 		return (NULL);
-	result = (char **)malloc(8 * (ft_nbr_wrd(s, c) + 1));
+	nbr_wrd = ft_nbr_wrd(s, c);
+	result = (char **)malloc((nbr_wrd + 1) * sizeof(char *));
+	if (!result)
+		return (NULL);
 	index = 0;
-	if (ft_nbr_wrd(s, c) == 1)
+	while (index < nbr_wrd)
 	{
-		result[0] = (char *)ft_calloc(ft_strlen(s) + 1, 1);
-		ft_memcpy(result[0], s, ft_strlen(s));
-		index++;
+		if (ft_wrd_size(s, c))
+		{
+			result[index] = ft_put_wrd(s, ft_wrd_size(s, c));
+			if (!result[index++])
+				return (ft_free_result(result));
+		}
+		s += ft_wrd_size(s, c) + 1;
 	}
-	while (index < ft_nbr_wrd(s, c))
-	{
-		if (index == ft_nbr_wrd(s, c) - 1)
-			ft_last_wrd(s, result, c, index);
-		else
-			ft_write_wrd(s, result, c, index);
-		index++;
-	}
-	result[index] = 0;
+	result[index] = NULL;
 	return (result);
 }
