@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 04:30:31 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/06/01 02:59:27 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/06/01 03:55:04 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static int	ft_find_end(char const *s1, char const *set)
 	i = 0;
 	while (set[i])
 	{
-		while (s1[size] == set[i])
+		while (s1[size] == set[i] && size >= 0)
 		{
 			size--;
 			i = 0;
