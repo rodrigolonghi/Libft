@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 00:16:26 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/27 22:43:49 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/31 20:03:44 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int		i;
-	char	*temp;
+	unsigned char	temp_c;
+	unsigned char	*temp_s;
 
-	i = 0;
-	temp = (char *)s;
-	while (temp[i] != '\0')
+	temp_s = (unsigned char *)s;
+	temp_c = (unsigned char)c;
+	while (*temp_s)
 	{
-		if (temp[i] == c)
-			return (temp + i);
-		i++;
+		if (*temp_s == temp_c)
+			return ((char *)temp_s);
+		temp_s++;
 	}
-	if (c == '\0')
-		return (temp + i);
+	if (temp_c == '\0')
+		return ((char *)temp_s);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: rfelipe- <rfelipe-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 02:41:12 by rfelipe-          #+#    #+#             */
-/*   Updated: 2021/05/27 23:07:28 by rfelipe-         ###   ########.fr       */
+/*   Updated: 2021/05/31 21:12:32 by rfelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
-		substring = (char *)ft_calloc(1, sizeof(char));
+		i = 1;
+	else if (start + len > ft_strlen(s))
+		i = ft_strlen(s) - start + 1;
 	else
+		i = len + 1;
+	substring = (char *)ft_calloc(i, sizeof(char));
+	if (!substring)
+		return (NULL);
+	if (i > 1)
 	{
-		substring = (char *)ft_calloc(len + 1, sizeof(char));
-		if (!substring)
-			return (NULL);
 		i = 0;
 		while (i < len && s[start + i] != '\0')
 		{
